@@ -55,4 +55,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
+    <!-- New Button for MapsFragment -->
+    <Button
+        android:id="@+id/button_go_to_maps"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:text="Go to the Maps Fragment"
+        app:layout_constraintTop_toBottomOf="@id/button_go_to_fifth"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

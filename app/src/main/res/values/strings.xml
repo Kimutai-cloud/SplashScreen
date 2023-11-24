@@ -7,6 +7,7 @@
     <string name="next">Go to the Second Page</string>
     <string name="previous">Go To the First Page</string>
 
+    <string name="spashtext">Waziri</string>
     <string name="hello_first_fragment">First Page</string>
     <string name="hello_second_fragment">Second Page</string>
     <!-- TODO: Remove or change this placeholder text -->

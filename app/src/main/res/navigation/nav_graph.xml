@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_FifthFragment"
             app:destination="@id/FifthFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_MapsFragment"
+            app:destination="@id/map" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -100,4 +103,14 @@
             android:id="@+id/action_FifthFragment_to_ThirdFragment"
             app:destination="@id/FifthFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/map"
+        android:name="com.example.splashscreen.MapsFragment"
+        android:label="map"
+        tools:layout="@layout/fragment_maps">
+        <action
+            android:id="@+id/action_FirstFragment_to_MapsFragment"
+            app:destination="@id/map" />
+    </fragment>
+
 </navigation>

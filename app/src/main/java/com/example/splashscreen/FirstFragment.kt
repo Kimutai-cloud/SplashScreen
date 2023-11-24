@@ -14,25 +14,20 @@ import com.example.splashscreen.databinding.FragmentFirstBinding
 class FirstFragment : Fragment() {
 
     private var _binding: FragmentFirstBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        // Button to navigate to the FirstFragment
+        // Button to navigate to the SecondFragment
         binding.buttonGoToSecond.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
@@ -50,6 +45,11 @@ class FirstFragment : Fragment() {
         // Button to navigate to the FifthFragment
         binding.buttonGoToFifth.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_FifthFragment)
+        }
+
+        // Button to navigate to the MapsFragment
+        binding.buttonGoToMaps.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_MapsFragment)
         }
     }
 
